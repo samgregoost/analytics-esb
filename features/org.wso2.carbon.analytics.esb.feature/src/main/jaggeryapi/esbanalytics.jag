@@ -179,7 +179,6 @@
                     tableSuffix = "-ALL";
                 }
                 var tableName = "ESB-STAT-PER-" + timeUnit + tableSuffix;
-                log.info(tableName);
                 query = stringify({
                                       query: "_componentId : ALL AND startingTime : [" + timeFrom + " TO " + timeTo + "}",
                                       "start": 0,
@@ -481,14 +480,14 @@
                 var componentName = request.getParameter("id");
                 var entryPoint = request.getParameter("entryPoint");
                 var timeUnit = timeRangeUtil.getSuitableTimeRangeUnit(timeFrom, timeTo);
-                var tableName = "ESB-STAT-PER-" + timeUnit;
+                var tableName = "MEDIATOR-STAT-PER-" + timeUnit;
                 var result = esbanalyticsUtils.getMessageRate(connector, loggedInUser, timeFrom, timeTo, tableName, componentName, entryPoint);
                 break;
             }
             case TYPE_ENDPOINT_LATENCY:
             {
                 var timeUnit = timeRangeUtil.getSuitableTimeRangeUnit(timeFrom, timeTo);
-                var tableName = "ESB-STAT-PER-" + timeUnit;
+                var tableName = "MEDIATOR-STAT-PER-" + timeUnit;
                 var componentName = request.getParameter("id");
                 var entryPoint = request.getParameter("entryPoint");
                 var result = esbanalyticsUtils.getLatency(connector, loggedInUser, timeFrom, timeTo, tableName, componentName, entryPoint);

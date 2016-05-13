@@ -114,6 +114,12 @@
                                     org.wso2.carbon.analytics.esb:org.wso2.carbon.analytics.esb.feature:${esb.analytics.version}
                                 </featureArtifactDef>
                                 <featureArtifactDef>
+                                    org.wso2.analytics.common:org.wso2.analytics.common.la.esb.feature:${analytics.common.version}
+                                </featureArtifactDef>
+                                <featureArtifactDef>
+                                    org.wso2.analytics.common:org.wso2.analytics.common.spark.util.feature:${analytics.common.version}
+                                </featureArtifactDef>
+                                <featureArtifactDef>
                                     org.wso2.carbon.analytics:org.wso2.carbon.analytics.dashboard.feature:${carbon.analytics.version}
                                 </featureArtifactDef>
                                 <featureArtifactDef>
@@ -397,6 +403,14 @@
                                     <version>${esb.analytics.version}</version>
                                 </feature>
                                 <feature>
+                                    <id>org.wso2.analytics.common.la.esb.feature.group</id>
+                                    <version>${analytics.common.version}</version>
+                                </feature>
+                                <feature>
+                                    <id>org.wso2.analytics.common.spark.util.feature.group</id>
+                                    <version>${analytics.common.version}</version>
+                                </feature>
+                                <feature>
                                     <id>org.wso2.carbon.analytics.messageconsole.feature.group</id>
                                     <version>${carbon.analytics.version}</version>
                                 </feature>
@@ -439,6 +453,7 @@
                                     <id>org.wso2.carbon.registry.ui.menu.feature.group</id>
                                     <version>${carbon.registry.version}</version>
                                 </feature>
+
                                 <feature>
                                     <id>org.wso2.carbon.registry.resource.properties.feature.group</id>
                                     <version>${carbon.registry.version}</version>

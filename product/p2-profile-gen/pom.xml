@@ -114,7 +114,7 @@
                                     org.wso2.carbon.analytics.esb:org.wso2.carbon.analytics.esb.feature:${esb.analytics.version}
                                 </featureArtifactDef>
                                 <featureArtifactDef>
-                                    org.wso2.analytics.common:org.wso2.analytics.common.la.esb.feature:${analytics.common.version}
+                                    org.wso2.analytics.common:org.wso2.carbon.analytics.shared.la.esb.feature:${analytics.common.version}
                                 </featureArtifactDef>
                                 <featureArtifactDef>
                                     org.wso2.analytics.common:org.wso2.analytics.common.spark.util.feature:${analytics.common.version}
@@ -403,7 +403,7 @@
                                     <version>${esb.analytics.version}</version>
                                 </feature>
                                 <feature>
-                                    <id>org.wso2.analytics.common.la.esb.feature.group</id>
+                                    <id>org.wso2.carbon.analytics.shared.la.esb.feature.group</id>
                                     <version>${analytics.common.version}</version>
                                 </feature>
                                 <feature>

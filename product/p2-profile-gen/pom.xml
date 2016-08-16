@@ -113,6 +113,9 @@
                                     org.wso2.analytics.esb:org.wso2.analytics.esb.feature:${esb.analytics.version}
                                 </featureArtifactDef>
                                 <featureArtifactDef>
+                                    org.wso2.analytics.esb:org.wso2.analytics.esb.la.feature:${esb.analytics.version}
+                                </featureArtifactDef>
+                                <featureArtifactDef>
                                     org.wso2.carbon.analytics:org.wso2.carbon.analytics.dashboard.ui.feature:${carbon.analytics.version}
                                 </featureArtifactDef>
 
@@ -346,6 +349,13 @@
                                 <featureArtifactDef>
                                     org.wso2.ciphertool:org.wso2.ciphertool.feature:${cipher.tool.version}
                                 </featureArtifactDef>
+                                <featureArtifactDef>
+                                    org.wso2.carbon.analytics.shared:org.wso2.carbon.analytics.shared.spark.common.udf.feature:${carbon.shared.analytics.version}
+                                </featureArtifactDef>
+                                <featureArtifactDef>
+                                    org.wso2.carbon.analytics.shared:org.wso2.carbon.analytics.shared.la.common.feature:${carbon.shared.analytics.version}
+                                </featureArtifactDef>
+
                                 <!-- END - Tools -->
                             </featureArtifacts>
                         </configuration>
@@ -405,6 +415,10 @@
                                     <version>${esb.analytics.version}</version>
                                 </feature>
                                 <feature>
+                                    <id>org.wso2.analytics.esb.la.feature.group</id>
+                                    <version>${esb.analytics.version}</version>
+                                </feature>
+                                <feature>
                                     <id>org.wso2.carbon.analytics.messageconsole.feature.group</id>
                                     <version>${carbon.analytics.version}</version>
                                 </feature>
@@ -437,7 +451,14 @@
                                     <id>org.wso2.das4esb.styles.feature.group</id>
                                     <version>${esb.analytics.version}</version>
                                 </feature>
-
+                                <feature>
+                                    <id>org.wso2.carbon.analytics.shared.spark.common.udf.feature.group</id>
+                                    <version>${carbon.shared.analytics.version}</version>
+                                </feature>
+                                <feature>
+                                    <id>org.wso2.carbon.analytics.shared.la.common.feature.group</id>
+                                    <version>${carbon.shared.analytics.version}</version>
+                                </feature>
                                 <!-- ********* START - Registry related  *********** -->
                                 <feature>
                                     <id>org.wso2.carbon.registry.core.feature.group</id>

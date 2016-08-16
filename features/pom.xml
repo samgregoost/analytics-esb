@@ -29,5 +29,6 @@
     <packaging>pom</packaging>
     <modules>
         <module>org.wso2.analytics.esb.feature</module>
+        <module>org.wso2.analytics.esb.la.feature</module>
     </modules>
 </project>
